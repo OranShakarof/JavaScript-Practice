@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>!חנות חיות המגניבה בארץ</h1>
+    <hr>
+    <table>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td> <a href="index.html"> דף בית</a></td>
+                <td> <a href="animals.html">חיות</a> </td>
+                <td> <a href="contact-us.html">צור קשר</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="right">צור קשר:</h2>
+    <form action="save.html" method="get" onsubmit="checkForm()">
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <label> שם פרטי:</label></td>
+                    <td><input type="text" name="firstName" id="firstBox"></td>
+                </tr>
+                <tr>
+                    <td> <label> שם משפחה:</label></td>
+                    <td><input type="text" name="lastName" id="lastBox"></td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label> מין :</label> 
+                    </td> 
+                     <td>
+                        <input type="radio" id="m" name="Gender" value="male">
+                        <label for="m"> זכר</label> 
+                        <br>
+                        <input type="radio" id="f" name="Gender" value="female">
+                        <label for="f">נקבה</label> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <label for="citys">עיר:</label>
+                    </td>
+                    <td>
+                        <select name="city" id="citys" value="בחר עיר" >
+                            <option value="disabled" selected disabled>בחר עיר..</option>
+                            <option value="tlv">תל אביב</option>
+                            <option value="hol">חולון</option>
+                            <option value="jer"> ירושלים</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>הודעה:</td>
+                    <td><textarea name="massage" id="msg" cols="20" rows="8"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <button>שלח</button>
+                        <input type="reset" value="נקה">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/Animal%20Shop/index.html">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+    
+
+
+
+    <p class="cen">&copy; כל הזכויות שמורות</p>
+</body>
+</html>

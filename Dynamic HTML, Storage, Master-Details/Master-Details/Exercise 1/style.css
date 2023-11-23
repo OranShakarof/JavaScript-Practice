@@ -1,0 +1,13 @@
+body{
+    font-family: monospace;
+    ;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+table , th,td {
+    margin: auto;
+    text-align: center;
+    
+}

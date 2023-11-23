@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+     <form>
+      <div class="row">
+            <div class="col-xs-3">
+        <label for="">Ingredient:</label>
+        <input type="text" class="from-control" id="ingredientBox">
+            </div>
+        <div class="col-xs-3">
+        <label for="">Amount:</label>
+        <input type="number" class="from-control" id="amountBox">
+        </div>
+      </div>
+        <br>
+        <button type="button" class="btn btn-dark"onclick="addToList()">Add to list:</button>
+     </form>
+    <div>
+        <ol class="list-group" id="divList"></ol>
+    </div>
+</body>
+</html>
